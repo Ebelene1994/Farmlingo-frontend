@@ -14,19 +14,18 @@ export const useSyncClerkUser = () => {
     if (!user) return;
 
     const userData = {
-      id: user.id,
+      userId: user.id,
+      clerkUserId: user.id,
+      firstName: user.firstName || undefined,
+      lastName: user.lastName || undefined,
       email:
-        
         (user as any).primaryEmailAddress?.emailAddress ||
         user.emailAddresses?.[0]?.emailAddress ||
-        undefined,
-      name:
-        (user as any).fullName ||
-        [user.firstName, user.lastName].filter(Boolean).join(' ') ||
-        undefined,
-      avatarUrl:
-       
-        (user as any).profileImageUrl || (user as any).imageUrl || undefined,
+        '',
+      imageUrl: (user as any).profileImageUrl || (user as any).imageUrl || undefined,
+      isActive: true, // or map from user if available
+      createdAt: (user as any).createdAt ? new Date((user as any).createdAt).toISOString() : new Date().toISOString(),
+      updatedAt: (user as any).updatedAt ? new Date((user as any).updatedAt).toISOString() : undefined,
     };
 
     setUserStore(userData);
