@@ -1,0 +1,339 @@
+import type { Course } from '../types/course';
+
+export const dummyCourses: Course[] = [
+  {
+    courseId: 'course_agri_001',
+    title: 'Essentials Agriculture 101',
+    description:
+      'A beginner-friendly course covering the fundamentals of agriculture, including soil, crops, and sustainable farming practices.',
+    category: 'Agriculture',
+    duration: '60m',
+    coverImage:
+      'https://images.unsplash.com/photo-1567471945805-069e09c11098?q=80&w=2348&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    lessons: [
+      {
+        lessonId: 'lesson_1',
+        title: 'Introduction to Agriculture',
+        shortDescription:
+          'Get an overview of agriculture and its role in society.',
+        contentType: 'video',
+        duration: '10m',
+        thumbnail:
+          'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop',
+        videoUrl: 'https://www.youtube.com/embed/1FLcijYWHZQ', // Already in embed format
+        resources: [
+          {
+            title: 'Introduction to Agriculture PDF',
+            type: 'pdf',
+            url: 'https://curriculumresources.edu.gh/wp-content/uploads/2024/10/Agriculture_LM_section-1-LV.pdf',
+          },
+        ],
+      },
+      {
+        lessonId: 'lesson_2',
+        title: 'Soil Basics and Fertility',
+        shortDescription:
+          'Learn about soil types, fertility, and their importance in farming.',
+        contentType: 'video',
+        duration: '15m',
+        thumbnail:
+          'https://images.unsplash.com/photo-1589924691995-400dc9f4a494?w=400&h=300&fit=crop',
+        videoUrl: 'https://www.youtube.com/embed/iloAQmroRK0', // Updated from youtu.be link
+        resources: [
+          {
+            title: 'Soil Fertility Guide',
+            type: 'external_link',
+            url: 'https://www.youtube.com/watch?v=OTMvhNmz5lc',
+          },
+        ],
+      },
+      {
+        lessonId: 'lesson_3',
+        title: 'Crop Production Fundamentals',
+        shortDescription:
+          'Understand the basic principles of crop growth and production.',
+        contentType: 'video',
+        duration: '20m',
+        thumbnail:
+          'https://images.unsplash.com/photo-1589924691995-400dc9f4a494?w=400&h=300&fit:crop',
+        videoUrl: 'https://www.youtube.com/embed/iIqi3Fy2kXM', // Updated from watch?v link
+        resources: [
+          {
+            title: 'Crop Production PDF',
+            type: 'pdf',
+            url: 'https://curriculumresources.edu.gh/wp-content/uploads/2024/10/Agriculture_LM_section-1-LV.pdf',
+          },
+        ],
+      },
+      {
+        lessonId: 'lesson_4',
+        title: 'Sustainable Farming Practices',
+        shortDescription:
+          'Discover sustainable methods to protect the environment and improve yield.',
+        contentType: 'video',
+        duration: '15m',
+        thumbnail:
+          'https://images.unsplash.com/photo-1542601906990-b4d3fb778b08?w=400&h=300&fit=crop',
+        videoUrl: 'https://www.youtube.com/embed/hyrJlE015dA', // Updated from watch?v link
+        resources: [
+          {
+            title: 'Sustainable Farming Resource',
+            type: 'external_link',
+            url: 'https://www.youtube.com/watch?v=OTMvhNmz5lc',
+          },
+        ],
+      },
+    ],
+    quizzes: [
+      {
+        quizId: 'quiz_agri_1',
+        questions: [
+          {
+            question: 'What is the primary purpose of agriculture?',
+            alternatives: {
+              a: { text: 'Entertainment', isCorrect: false },
+              b: { text: 'Food and raw material production', isCorrect: true },
+              c: { text: 'Manufacturing', isCorrect: false },
+              d: { text: 'Transportation', isCorrect: false },
+            },
+          },
+          {
+            question: 'Which type of soil is best for agriculture?',
+            alternatives: {
+              a: { text: 'Clay soil', isCorrect: false },
+              b: { text: 'Sandy soil', isCorrect: false },
+              c: { text: 'Loamy soil', isCorrect: true },
+              d: { text: 'Rocky soil', isCorrect: false },
+            },
+          },
+          {
+            question: 'Which practice helps maintain soil fertility?',
+            alternatives: {
+              a: { text: 'Overgrazing', isCorrect: false },
+              b: { text: 'Crop rotation', isCorrect: true },
+              c: { text: 'Monocropping', isCorrect: false },
+              d: { text: 'Deforestation', isCorrect: false },
+            },
+          },
+        ],
+      },
+    ],
+  },
+  {
+    courseId: 'course_agri_002',
+    title: 'Organic Farming Fundamentals',
+    description:
+      'Learn the principles and practices of organic farming, including natural fertilizers, pest management, and certification processes.',
+    category: 'Agriculture',
+    duration: '65m',
+    coverImage:
+      'https://images.unsplash.com/photo-1666987571351-737b29874697?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    lessons: [
+      {
+        lessonId: 'lesson_1',
+        title: 'What is Organic Farming?',
+        shortDescription:
+          'Understand the philosophy and goals of organic farming.',
+        contentType: 'video',
+        duration: '12m',
+        thumbnail:
+          'https://images.unsplash.com/photo-1564705840789-0e63e2d5e2b5?w=400&h=300&fit=crop',
+        videoUrl: 'https://www.youtube.com/embed/1FLcijYWHZQ',
+        resources: [
+          {
+            title: 'Introduction to Organic Farming PDF',
+            type: 'pdf',
+            url: 'https://curriculumresources.edu.gh/wp-content/uploads/2024/10/Agriculture_LM_section-1-LV.pdf',
+          },
+        ],
+      },
+      {
+        lessonId: 'lesson_2',
+        title: 'Natural Fertilizers',
+        shortDescription:
+          'Explore natural alternatives to chemical fertilizers.',
+        contentType: 'video',
+        duration: '18m',
+        thumbnail:
+          'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop',
+        videoUrl: 'https://www.youtube.com/embed/1FLcijYWHZQ', // Updated from youtu.be link
+        resources: [
+          {
+            title: 'Guide to Composting',
+            type: 'external_link',
+            url: 'https://www.youtube.com/watch?v=OTMvhNmz5lc',
+          },
+        ],
+      },
+      {
+        lessonId: 'lesson_3',
+        title: 'Pest and Disease Management',
+        shortDescription:
+          'Learn organic strategies to manage pests and diseases.',
+        contentType: 'video',
+        duration: '20m',
+        thumbnail:
+          'https://images.unsplash.com/photo-1556132618-576a3e2a2b26?w=400&h=300&fit=crop',
+        videoUrl: 'https://www.youtube.com/embed/1FLcijYWHZQ',
+        resources: [
+          {
+            title: 'Organic Pest Control PDF',
+            type: 'pdf',
+            url: 'https://curriculumresources.edu.gh/wp-content/uploads/2024/10/Agriculture_LM_section-1-LV.pdf',
+          },
+        ],
+      },
+      {
+        lessonId: 'lesson_4',
+        title: 'Certification and Standards',
+        shortDescription:
+          'Understand certification processes for organic farming.',
+        contentType: 'video',
+        duration: '15m',
+        thumbnail:
+          'https://images.unsplash.com/photo-1603133872878-684f5ec2e12c?w=400&h=300&fit=crop',
+        videoUrl: 'https://www.youtube.com/embed/1FLcijYWHZQ',
+        resources: [
+          {
+            title: 'Organic Certification Guide',
+            type: 'external_link',
+            url: 'https://www.youtube.com/watch?v=OTMvhNmz5lc',
+          },
+        ],
+      },
+    ],
+    quizzes: [
+      {
+        quizId: 'quiz_org_1',
+        questions: [
+          {
+            question: "What makes farming 'organic'?",
+            alternatives: {
+              a: { text: 'Use of synthetic chemicals', isCorrect: false },
+              b: { text: 'Reliance on natural methods', isCorrect: true },
+              c: { text: 'Growing crops indoors', isCorrect: false },
+              d: { text: 'Use of GMOs', isCorrect: false },
+            },
+          },
+          {
+            question: 'Which of the following is a natural fertilizer?',
+            alternatives: {
+              a: { text: 'Compost', isCorrect: true },
+              b: { text: 'Ammonium nitrate', isCorrect: false },
+              c: { text: 'Urea', isCorrect: false },
+              d: { text: 'Superphosphate', isCorrect: false },
+            },
+          },
+        ],
+      },
+    ],
+  },
+  {
+    courseId: 'course_agri_003',
+    title: 'Modern Farm Machinery',
+    description:
+      'Understand the role of tractors, harvesters, irrigation systems, and drones in modern agriculture.',
+    category: 'Agriculture',
+    duration: '70m',
+    coverImage:
+      'https://images.unsplash.com/photo-1560321941-84a23c5fce8c?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    lessons: [
+      {
+        lessonId: 'lesson_1',
+        title: 'Introduction to Farm Machinery',
+        shortDescription:
+          'Discover the importance of machinery in farming evolution.',
+        contentType: 'video',
+        duration: '15m',
+        thumbnail:
+          'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop',
+        videoUrl: 'https://www.youtube.com/embed/1FLcijYWHZQ',
+        resources: [
+          {
+            title: 'Farm Machinery Overview PDF',
+            type: 'pdf',
+            url: 'https://curriculumresources.edu.gh/wp-content/uploads/2024/10/Agriculture_LM_section-1-LV.pdf',
+          },
+        ],
+      },
+      {
+        lessonId: 'lesson_2',
+        title: 'Tractors and Implements',
+        shortDescription: 'Learn about tractors and the implements they use.',
+        contentType: 'video',
+        duration: '20m',
+        thumbnail:
+          'https://images.unsplash.com/photo-1508615264297-451c21c50a83?w=400&h=300&fit=crop',
+        videoUrl: 'https://www.youtube.com/embed/1FLcijYWHZQ', // Updated from youtu.be link
+        resources: [
+          {
+            title: 'Tractor Implements Guide',
+            type: 'external_link',
+            url: 'https://www.youtube.com/watch?v=OTMvhNmz5lc',
+          },
+        ],
+      },
+      {
+        lessonId: 'lesson_3',
+        title: 'Harvesting Equipment',
+        shortDescription:
+          'Understand the machines used to harvest crops efficiently.',
+        contentType: 'video',
+        duration: '20m',
+        thumbnail:
+          'https://images.unsplash.com/photo-1558618047-3c8c76bd8d4a?w=400&h=300&fit:crop',
+        videoUrl: 'https://www.youtube.com/embed/1FLcijYWHZQ',
+        resources: [
+          {
+            title: 'Combine Harvester Manual',
+            type: 'pdf',
+            url: 'https://curriculumresources.edu.gh/wp-content/uploads/2024/10/Agriculture_LM_section-1-LV.pdf',
+          },
+        ],
+      },
+      {
+        lessonId: 'lesson_4',
+        title: 'Technology in Agriculture',
+        shortDescription:
+          'Explore how drones and smart tools are transforming farming.',
+        contentType: 'video',
+        duration: '15m',
+        thumbnail:
+          'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit:crop',
+        videoUrl: 'https://www.youtube.com/embed/1FLcijYWHZQ',
+        resources: [
+          {
+            title: 'Smart Farming with Drones',
+            type: 'external_link',
+            url: 'https://www.youtube.com/watch?v=OTMvhNmz5lc',
+          },
+        ],
+      },
+    ],
+    quizzes: [
+      {
+        quizId: 'quiz_machinery_1',
+        questions: [
+          {
+            question: 'Which machine is primarily used for plowing fields?',
+            alternatives: {
+              a: { text: 'Harvester', isCorrect: false },
+              b: { text: 'Seeder', isCorrect: false },
+              c: { text: 'Tractor', isCorrect: true },
+              d: { text: 'Drone', isCorrect: false },
+            },
+          },
+          {
+            question: 'Which modern technology is used for monitoring crops?',
+            alternatives: {
+              a: { text: 'Tractor', isCorrect: false },
+              b: { text: 'Drone', isCorrect: true },
+              c: { text: 'Plow', isCorrect: false },
+              d: { text: 'Harvester', isCorrect: false },
+            },
+          },
+        ],
+      },
+    ],
+  },
+];
