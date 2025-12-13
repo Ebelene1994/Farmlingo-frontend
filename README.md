@@ -1,2 +1,2 @@
-# Farmlingo-webmvp
-Farmlingo-webmvp
+# Farmlingo
+Farmlingo
