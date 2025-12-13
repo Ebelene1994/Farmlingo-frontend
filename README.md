@@ -241,3 +241,5 @@ VITE_API_KEY=yourapikey
 4. Push to your branch (`git push origin feature/awesome-feature`)
 5. Open a Pull Request
 6.
+# Farmlingo
+Farmlingo
