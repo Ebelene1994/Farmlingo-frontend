@@ -1,0 +1,1 @@
+import{u as r,j as s}from"./index-B6CDngGk.js";function o(){const e=r(a=>a.user);return s.jsxs("div",{className:"p-6",children:[s.jsx("h1",{className:"text-2xl font-bold mb-4",children:"Dashboard"}),s.jsxs("p",{children:["Welcome back, ",e?.firstName," ",e?.lastName,"!"]})]})}export{o as default};
