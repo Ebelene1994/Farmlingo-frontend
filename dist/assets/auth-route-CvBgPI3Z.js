@@ -1,0 +1,1 @@
+import{j as e,e as s,N as a,f as r,O as n}from"./index-B6CDngGk.js";function i({children:t}){return e.jsxs(e.Fragment,{children:[e.jsx(s,{children:e.jsx(a,{to:"/home",replace:!0})}),e.jsx(r,{children:t||e.jsx(n,{})})]})}export{i as default};
